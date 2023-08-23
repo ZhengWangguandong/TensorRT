@@ -1,0 +1,1 @@
+/usr/bin/c++   -O0 -Wall -g2 -ggdb   -L/usr/local/cuda-11.6/targets/x86_64-linux/lib -lnvinfer CMakeFiles/CppRuntime.dir/CppRuntime.cpp.o  -o ../bin/CppRuntime  -lnvonnxparser -lnvinfer -lcudart 

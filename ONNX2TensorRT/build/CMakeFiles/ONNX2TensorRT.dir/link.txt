@@ -1,0 +1,1 @@
+/usr/bin/c++   -O0 -Wall -g2 -ggdb   CMakeFiles/ONNX2TensorRT.dir/pytorch2ONNX2TensorRT.cpp.o  -o ../bin/ONNX2TensorRT  -lnvonnxparser -lnvinfer 
