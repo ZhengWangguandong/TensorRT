@@ -16,6 +16,10 @@ Python 和 Cpp的案例都有（注释完整）
 
 Python 和 Cpp的案例都有（注释完整）
 
+#### 实战案例1
+
+.onnx和 .engine 权重文件  https://pan.baidu.com/s/1kYh5N18S0Bwk4MqV802U2g?pwd=hd3g
+
 <br />
 
 ### TensorRT环境部署
