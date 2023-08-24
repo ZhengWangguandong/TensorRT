@@ -48,6 +48,11 @@ profile.set_shape('input', [1,3,224,224], [1,3,224,224], [1,3,224,224])   # 为�
 config.add_optimization_profile(profile)   # 将优化配置文件添加到构建配置中
 
 # 使用 builder  network  config 创建 TensorRT 引擎
+# 1. 解析 network graph，注册计算层
+# 2. 删除冗余的常量节点与无用层
+# 3. 进行 model fusion，构成新的计算层
+# 4. 计算层最优执行 kernel 搜索
+# 5. 打包最终的 kernel 方案构成 engine
 with torch.cuda.device(device): 
     engine = builder.build_engine(network, config) 
  

@@ -46,6 +46,7 @@ class TRTWrapper(torch.nn.Module):
                 assert s_min <= s_input <= s_max, 'Input shape should be between ' \
                 + f'{profile[0]} and {profile[2]}' \
                 + f' but get {tuple(input_tensor.shape)}.' 
+                
             idx = self.engine.get_binding_index(input_name) 
  
             # All input tensors must be gpu variables 
